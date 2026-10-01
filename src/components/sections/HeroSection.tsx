@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import heroCarImg from "../../../../public/hero-car.jpg";
 
 const fadeInUp: any = {
   hidden: { opacity: 0, y: 40 },
@@ -24,7 +25,7 @@ export function HeroSection() {
       {/* Mobile-only background car image — gives visual depth on phones */}
       <div className="absolute inset-0 -z-10 lg:hidden">
         <Image 
-          src="/hero-car.jpg" 
+          src={heroCarImg} 
           alt="" 
           fill 
           sizes="100vw"
@@ -117,7 +118,7 @@ export function HeroSection() {
         >
           <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent z-10 pointer-events-none"></div>
           <Image 
-            src="/hero-car.jpg" 
+            src={heroCarImg} 
             alt="Volkswagen Nivus 0km" 
             fill 
             sizes="(max-width: 1024px) 100vw, 50vw"
