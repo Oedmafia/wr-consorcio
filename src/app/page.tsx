@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
+import { Explore3DSection } from "@/components/sections/Explore3DSection";
 import { PopularPlansSection } from "@/components/sections/PopularPlansSection";
+import { SimulatorSection } from "@/components/sections/SimulatorSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { LocationSection } from "@/components/sections/LocationSection";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -19,7 +21,9 @@ export default function Home() {
       <main>
         <HeroSection />
         <BenefitsSection />
+        <Explore3DSection />
         <TestimonialsSection />
+        <SimulatorSection />
         <LocationSection />
         <PopularPlansSection />
         <CreditTableSection />
